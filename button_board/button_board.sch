@@ -1,0 +1,800 @@
+EESchema Schematic File Version 4
+LIBS:button_board-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:CD74HC4067M U1
+U 1 1 5CEE6212
+P 2300 1750
+F 0 "U1" V 2400 1750 50  0000 C CNN
+F 1 "CD74HC4067M" V 2300 1750 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3200 750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 1950 2600 50  0001 C CNN
+	1    2300 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5CEA8CDD
+P 3200 2350
+F 0 "R1" V 2995 2350 50  0000 C CNN
+F 1 "10K" V 3086 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3240 2340 50  0001 C CNN
+F 3 "~" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2250 2900 2350
+Wire Wire Line
+	2900 2350 3050 2350
+Wire Wire Line
+	3350 2350 3500 2350
+Wire Wire Line
+	3500 2350 3500 1750
+Wire Wire Line
+	3500 1750 3400 1750
+$Comp
+L power:GND #PWR011
+U 1 1 5CEAACC7
+P 3500 2450
+F 0 "#PWR011" H 3500 2200 50  0001 C CNN
+F 1 "GND" H 3505 2277 50  0000 C CNN
+F 2 "" H 3500 2450 50  0001 C CNN
+F 3 "" H 3500 2450 50  0001 C CNN
+	1    3500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2450 3500 2350
+Connection ~ 3500 2350
+$Comp
+L Device:C C1
+U 1 1 5CEAED68
+P 1150 2000
+F 0 "C1" H 1265 2046 50  0000 L CNN
+F 1 "0.1uf" H 1265 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1188 1850 50  0001 C CNN
+F 3 "~" H 1150 2000 50  0001 C CNN
+	1    1150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1850 1150 1750
+Wire Wire Line
+	1150 1750 1300 1750
+$Comp
+L power:+5V #PWR05
+U 1 1 5CEAFE64
+P 1800 3100
+F 0 "#PWR05" H 1800 2950 50  0001 C CNN
+F 1 "+5V" H 1815 3273 50  0000 C CNN
+F 2 "" H 1800 3100 50  0001 C CNN
+F 3 "" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3100 1800 3200
+$Comp
+L power:GND #PWR010
+U 1 1 5CEB0FCF
+P 1150 2250
+F 0 "#PWR010" H 1150 2000 50  0001 C CNN
+F 1 "GND" H 1155 2077 50  0000 C CNN
+F 2 "" H 1150 2250 50  0001 C CNN
+F 3 "" H 1150 2250 50  0001 C CNN
+	1    1150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2250 1150 2150
+Text GLabel 1800 2400 3    50   Input ~ 0
+COM
+Wire Wire Line
+	1800 2400 1800 2250
+Text GLabel 2200 2400 3    50   Input ~ 0
+S0
+Wire Wire Line
+	2200 2400 2200 2250
+Text GLabel 2300 2400 3    50   Input ~ 0
+S1
+Wire Wire Line
+	2300 2400 2300 2250
+Text GLabel 2400 2400 3    50   Input ~ 0
+S2
+Wire Wire Line
+	2400 2400 2400 2250
+Text GLabel 2500 2400 3    50   Input ~ 0
+S3
+Wire Wire Line
+	2500 2400 2500 2250
+Text GLabel 1600 1100 1    50   Input ~ 0
+P0
+Wire Wire Line
+	1600 1100 1600 1250
+Text GLabel 1700 1100 1    50   Input ~ 0
+P1
+Wire Wire Line
+	1700 1100 1700 1250
+Text GLabel 1800 1100 1    50   Input ~ 0
+P2
+Wire Wire Line
+	1800 1100 1800 1250
+Text GLabel 1900 1100 1    50   Input ~ 0
+P3
+Wire Wire Line
+	1900 1100 1900 1250
+Text GLabel 2000 1100 1    50   Input ~ 0
+P4
+Wire Wire Line
+	2000 1100 2000 1250
+Text GLabel 2100 1100 1    50   Input ~ 0
+P5
+Wire Wire Line
+	2100 1100 2100 1250
+Text GLabel 2200 1100 1    50   Input ~ 0
+P6
+Wire Wire Line
+	2200 1100 2200 1250
+Text GLabel 2300 1100 1    50   Input ~ 0
+P7
+Wire Wire Line
+	2300 1100 2300 1250
+Text GLabel 2400 1100 1    50   Input ~ 0
+P8
+Wire Wire Line
+	2400 1100 2400 1250
+Text GLabel 2500 1100 1    50   Input ~ 0
+P9
+Wire Wire Line
+	2500 1100 2500 1250
+Text GLabel 2600 1100 1    50   Input ~ 0
+P10
+Wire Wire Line
+	2600 1100 2600 1250
+Text GLabel 2700 1100 1    50   Input ~ 0
+P11
+Wire Wire Line
+	2700 1100 2700 1250
+Text GLabel 2800 1100 1    50   Input ~ 0
+P12
+Wire Wire Line
+	2800 1100 2800 1250
+Text GLabel 2900 1100 1    50   Input ~ 0
+P13
+Wire Wire Line
+	2900 1100 2900 1250
+Text GLabel 3000 1100 1    50   Input ~ 0
+P14
+Wire Wire Line
+	3000 1100 3000 1250
+Text GLabel 3100 1100 1    50   Input ~ 0
+P15
+Wire Wire Line
+	3100 1100 3100 1250
+Text GLabel 5050 1700 3    50   Input ~ 0
+P0
+Text GLabel 2000 4000 1    50   Input ~ 0
+P8
+Wire Wire Line
+	2000 4000 2000 4150
+Text GLabel 2100 4000 1    50   Input ~ 0
+P9
+Wire Wire Line
+	2100 4000 2100 4150
+Text GLabel 2200 4000 1    50   Input ~ 0
+P10
+Wire Wire Line
+	2200 4000 2200 4150
+Text GLabel 2300 4000 1    50   Input ~ 0
+P11
+Wire Wire Line
+	2300 4000 2300 4150
+Text GLabel 2400 4000 1    50   Input ~ 0
+P12
+Wire Wire Line
+	2400 4000 2400 4150
+Text GLabel 2500 4000 1    50   Input ~ 0
+P13
+Wire Wire Line
+	2500 4000 2500 4150
+Text GLabel 2600 4000 1    50   Input ~ 0
+P14
+Wire Wire Line
+	2600 4000 2600 4150
+Text GLabel 2700 4000 1    50   Input ~ 0
+P15
+Wire Wire Line
+	2700 4000 2700 4150
+$Comp
+L power:GND #PWR06
+U 1 1 5CED02AD
+P 5700 1700
+F 0 "#PWR06" H 5700 1450 50  0001 C CNN
+F 1 "GND" H 5705 1527 50  0000 C CNN
+F 2 "" H 5700 1700 50  0001 C CNN
+F 3 "" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1700 5700 1600
+Wire Wire Line
+	5600 1600 5700 1600
+$Comp
+L Connector_Generic:Conn_01x10 AUX1
+U 1 1 5CED25FB
+P 2300 4350
+F 0 "AUX1" V 2425 4296 50  0000 C CNN
+F 1 "AUX" V 2516 4296 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 2300 4350 50  0001 C CNN
+F 3 "~" H 2300 4350 50  0001 C CNN
+	1    2300 4350
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5CED6168
+P 1800 4000
+F 0 "#PWR020" H 1800 3850 50  0001 C CNN
+F 1 "+5V" H 1815 4173 50  0000 C CNN
+F 2 "" H 1800 4000 50  0001 C CNN
+F 3 "" H 1800 4000 50  0001 C CNN
+	1    1800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4150 2800 4050
+Wire Wire Line
+	1800 4000 1800 4050
+Wire Wire Line
+	1800 4050 1900 4050
+Wire Wire Line
+	1900 4050 1900 4150
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5CF09E1C
+P 4750 1600
+F 0 "JP1" H 4750 1835 50  0000 C CNN
+F 1 "JP" H 4750 1744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 1600 50  0001 C CNN
+F 3 "~" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 1750 3    50   Input ~ 0
+P8
+Wire Wire Line
+	4450 1750 4450 1600
+Wire Wire Line
+	4450 1600 4550 1600
+Wire Wire Line
+	4950 1600 5050 1600
+Connection ~ 5050 1600
+Wire Wire Line
+	5050 1600 5050 1700
+Text GLabel 2000 3150 1    50   Input ~ 0
+COM
+Wire Wire Line
+	2000 3150 2000 3300
+Text GLabel 2400 3150 1    50   Input ~ 0
+S0
+Wire Wire Line
+	2400 3150 2400 3300
+Text GLabel 2300 3150 1    50   Input ~ 0
+S1
+Wire Wire Line
+	2300 3150 2300 3300
+Text GLabel 2200 3150 1    50   Input ~ 0
+S2
+Wire Wire Line
+	2200 3150 2200 3300
+Text GLabel 2100 3150 1    50   Input ~ 0
+S3
+Wire Wire Line
+	2100 3150 2100 3300
+$Comp
+L power:GND #PWR021
+U 1 1 5CFB7461
+P 2600 3100
+F 0 "#PWR021" H 2600 2850 50  0001 C CNN
+F 1 "GND" H 2605 2927 50  0000 C CNN
+F 2 "" H 2600 3100 50  0001 C CNN
+F 3 "" H 2600 3100 50  0001 C CNN
+	1    2600 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3100 2600 3200
+Wire Wire Line
+	1800 3200 1900 3200
+Wire Wire Line
+	1900 3200 1900 3300
+Wire Wire Line
+	2600 3200 2500 3200
+Wire Wire Line
+	2500 3200 2500 3300
+$Comp
+L power:GND #PWR022
+U 1 1 5CFE470C
+P 2900 3950
+F 0 "#PWR022" H 2900 3700 50  0001 C CNN
+F 1 "GND" H 2905 3777 50  0000 C CNN
+F 2 "" H 2900 3950 50  0001 C CNN
+F 3 "" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2900 3950 2900 4050
+Wire Wire Line
+	2900 4050 2800 4050
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D00345C
+P 1100 6750
+F 0 "H3" H 1200 6796 50  0000 L CNN
+F 1 "MountingHole" H 1200 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 6750 50  0001 C CNN
+F 3 "~" H 1100 6750 50  0001 C CNN
+	1    1100 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D004382
+P 1100 6950
+F 0 "H4" H 1200 6996 50  0000 L CNN
+F 1 "MountingHole" H 1200 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 6950 50  0001 C CNN
+F 3 "~" H 1100 6950 50  0001 C CNN
+	1    1100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5D00E7C0
+P 1100 7150
+F 0 "H5" H 1200 7196 50  0000 L CNN
+F 1 "MountingHole" H 1200 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 7150 50  0001 C CNN
+F 3 "~" H 1100 7150 50  0001 C CNN
+	1    1100 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5D00E7C6
+P 1100 7350
+F 0 "H6" H 1200 7396 50  0000 L CNN
+F 1 "MountingHole" H 1200 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 7350 50  0001 C CNN
+F 3 "~" H 1100 7350 50  0001 C CNN
+	1    1100 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D013740
+P 1100 6350
+F 0 "H1" H 1200 6396 50  0000 L CNN
+F 1 "MountingHole" H 1200 6305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 6350 50  0001 C CNN
+F 3 "~" H 1100 6350 50  0001 C CNN
+	1    1100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D013746
+P 1100 6550
+F 0 "H2" H 1200 6596 50  0000 L CNN
+F 1 "MountingHole" H 1200 6505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1100 6550 50  0001 C CNN
+F 3 "~" H 1100 6550 50  0001 C CNN
+	1    1100 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 MAIN1
+U 1 1 5CED4D8F
+P 2200 3500
+F 0 "MAIN1" V 2072 3012 50  0000 R CNN
+F 1 "MAIN" V 2163 3012 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical" H 2200 3500 50  0001 C CNN
+F 3 "~" H 2200 3500 50  0001 C CNN
+	1    2200 3500
+	0    -1   1    0   
+$EndComp
+NoConn ~ 2600 3300
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5CEE9571
+P 5400 1600
+F 0 "SW1" H 5400 1835 50  0000 C CNN
+F 1 "SW" H 5400 1744 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 5400 1600 50  0001 C CNN
+F 3 "~" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1600 5200 1600
+Text GLabel 6750 1700 3    50   Input ~ 0
+P1
+$Comp
+L power:GND #PWR01
+U 1 1 5CEF7FE3
+P 7400 1700
+F 0 "#PWR01" H 7400 1450 50  0001 C CNN
+F 1 "GND" H 7405 1527 50  0000 C CNN
+F 2 "" H 7400 1700 50  0001 C CNN
+F 3 "" H 7400 1700 50  0001 C CNN
+	1    7400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1700 7400 1600
+Wire Wire Line
+	7300 1600 7400 1600
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 5CEF7FEB
+P 6450 1600
+F 0 "JP2" H 6450 1835 50  0000 C CNN
+F 1 "JP" H 6450 1744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6450 1600 50  0001 C CNN
+F 3 "~" H 6450 1600 50  0001 C CNN
+	1    6450 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 1750 3    50   Input ~ 0
+P9
+Wire Wire Line
+	6150 1750 6150 1600
+Wire Wire Line
+	6150 1600 6250 1600
+Wire Wire Line
+	6650 1600 6750 1600
+Connection ~ 6750 1600
+Wire Wire Line
+	6750 1600 6750 1700
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5CEF7FF7
+P 7100 1600
+F 0 "SW2" H 7100 1835 50  0000 C CNN
+F 1 "SW" H 7100 1744 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 7100 1600 50  0001 C CNN
+F 3 "~" H 7100 1600 50  0001 C CNN
+	1    7100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1600 6900 1600
+Text GLabel 8450 1700 3    50   Input ~ 0
+P2
+$Comp
+L power:GND #PWR02
+U 1 1 5CEFAA9F
+P 9100 1700
+F 0 "#PWR02" H 9100 1450 50  0001 C CNN
+F 1 "GND" H 9105 1527 50  0000 C CNN
+F 2 "" H 9100 1700 50  0001 C CNN
+F 3 "" H 9100 1700 50  0001 C CNN
+	1    9100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1700 9100 1600
+Wire Wire Line
+	9000 1600 9100 1600
+$Comp
+L Jumper:Jumper_2_Open JP3
+U 1 1 5CEFAAA7
+P 8150 1600
+F 0 "JP3" H 8150 1835 50  0000 C CNN
+F 1 "JP" H 8150 1744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8150 1600 50  0001 C CNN
+F 3 "~" H 8150 1600 50  0001 C CNN
+	1    8150 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 1750 3    50   Input ~ 0
+P10
+Wire Wire Line
+	7850 1750 7850 1600
+Wire Wire Line
+	7850 1600 7950 1600
+Wire Wire Line
+	8350 1600 8450 1600
+Connection ~ 8450 1600
+Wire Wire Line
+	8450 1600 8450 1700
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5CEFAAB3
+P 8800 1600
+F 0 "SW3" H 8800 1835 50  0000 C CNN
+F 1 "SW" H 8800 1744 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 8800 1600 50  0001 C CNN
+F 3 "~" H 8800 1600 50  0001 C CNN
+	1    8800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1600 8600 1600
+Text GLabel 10150 1700 3    50   Input ~ 0
+P3
+$Comp
+L power:GND #PWR03
+U 1 1 5CF06235
+P 10800 1700
+F 0 "#PWR03" H 10800 1450 50  0001 C CNN
+F 1 "GND" H 10805 1527 50  0000 C CNN
+F 2 "" H 10800 1700 50  0001 C CNN
+F 3 "" H 10800 1700 50  0001 C CNN
+	1    10800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 1700 10800 1600
+Wire Wire Line
+	10700 1600 10800 1600
+$Comp
+L Jumper:Jumper_2_Open JP4
+U 1 1 5CF0623D
+P 9850 1600
+F 0 "JP4" H 9850 1835 50  0000 C CNN
+F 1 "JP" H 9850 1744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9850 1600 50  0001 C CNN
+F 3 "~" H 9850 1600 50  0001 C CNN
+	1    9850 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 1750 3    50   Input ~ 0
+P11
+Wire Wire Line
+	9550 1750 9550 1600
+Wire Wire Line
+	9550 1600 9650 1600
+Wire Wire Line
+	10050 1600 10150 1600
+Connection ~ 10150 1600
+Wire Wire Line
+	10150 1600 10150 1700
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5CF06249
+P 10500 1600
+F 0 "SW4" H 10500 1835 50  0000 C CNN
+F 1 "SW" H 10500 1744 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 10500 1600 50  0001 C CNN
+F 3 "~" H 10500 1600 50  0001 C CNN
+	1    10500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1600 10300 1600
+Text GLabel 5050 2850 3    50   Input ~ 0
+P4
+$Comp
+L power:GND #PWR04
+U 1 1 5CF2C780
+P 5700 2850
+F 0 "#PWR04" H 5700 2600 50  0001 C CNN
+F 1 "GND" H 5705 2677 50  0000 C CNN
+F 2 "" H 5700 2850 50  0001 C CNN
+F 3 "" H 5700 2850 50  0001 C CNN
+	1    5700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2850 5700 2750
+Wire Wire Line
+	5600 2750 5700 2750
+$Comp
+L Jumper:Jumper_2_Open JP5
+U 1 1 5CF2C788
+P 4750 2750
+F 0 "JP5" H 4750 2985 50  0000 C CNN
+F 1 "JP" H 4750 2894 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 2750 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4750 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 2900 3    50   Input ~ 0
+P12
+Wire Wire Line
+	4450 2900 4450 2750
+Wire Wire Line
+	4450 2750 4550 2750
+Wire Wire Line
+	4950 2750 5050 2750
+Connection ~ 5050 2750
+Wire Wire Line
+	5050 2750 5050 2850
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5CF2C794
+P 5400 2750
+F 0 "SW5" H 5400 2985 50  0000 C CNN
+F 1 "SW" H 5400 2894 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 5400 2750 50  0001 C CNN
+F 3 "~" H 5400 2750 50  0001 C CNN
+	1    5400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2750 5200 2750
+Text GLabel 6750 2850 3    50   Input ~ 0
+P5
+$Comp
+L power:GND #PWR07
+U 1 1 5CF2C79C
+P 7400 2850
+F 0 "#PWR07" H 7400 2600 50  0001 C CNN
+F 1 "GND" H 7405 2677 50  0000 C CNN
+F 2 "" H 7400 2850 50  0001 C CNN
+F 3 "" H 7400 2850 50  0001 C CNN
+	1    7400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2850 7400 2750
+Wire Wire Line
+	7300 2750 7400 2750
+$Comp
+L Jumper:Jumper_2_Open JP6
+U 1 1 5CF2C7A4
+P 6450 2750
+F 0 "JP6" H 6450 2985 50  0000 C CNN
+F 1 "JP" H 6450 2894 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6450 2750 50  0001 C CNN
+F 3 "~" H 6450 2750 50  0001 C CNN
+	1    6450 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 2900 3    50   Input ~ 0
+P13
+Wire Wire Line
+	6150 2900 6150 2750
+Wire Wire Line
+	6150 2750 6250 2750
+Wire Wire Line
+	6650 2750 6750 2750
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 6750 2850
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5CF2C7B0
+P 7100 2750
+F 0 "SW6" H 7100 2985 50  0000 C CNN
+F 1 "SW" H 7100 2894 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 7100 2750 50  0001 C CNN
+F 3 "~" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2750 6900 2750
+Text GLabel 8450 2850 3    50   Input ~ 0
+P6
+$Comp
+L power:GND #PWR08
+U 1 1 5CF2C7B8
+P 9100 2850
+F 0 "#PWR08" H 9100 2600 50  0001 C CNN
+F 1 "GND" H 9105 2677 50  0000 C CNN
+F 2 "" H 9100 2850 50  0001 C CNN
+F 3 "" H 9100 2850 50  0001 C CNN
+	1    9100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2850 9100 2750
+Wire Wire Line
+	9000 2750 9100 2750
+$Comp
+L Jumper:Jumper_2_Open JP7
+U 1 1 5CF2C7C0
+P 8150 2750
+F 0 "JP7" H 8150 2985 50  0000 C CNN
+F 1 "JP" H 8150 2894 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8150 2750 50  0001 C CNN
+F 3 "~" H 8150 2750 50  0001 C CNN
+	1    8150 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 2900 3    50   Input ~ 0
+P14
+Wire Wire Line
+	7850 2900 7850 2750
+Wire Wire Line
+	7850 2750 7950 2750
+Wire Wire Line
+	8350 2750 8450 2750
+Connection ~ 8450 2750
+Wire Wire Line
+	8450 2750 8450 2850
+$Comp
+L Switch:SW_SPST SW7
+U 1 1 5CF2C7CC
+P 8800 2750
+F 0 "SW7" H 8800 2985 50  0000 C CNN
+F 1 "SW" H 8800 2894 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 8800 2750 50  0001 C CNN
+F 3 "~" H 8800 2750 50  0001 C CNN
+	1    8800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2750 8600 2750
+Text GLabel 10150 2850 3    50   Input ~ 0
+P7
+$Comp
+L power:GND #PWR09
+U 1 1 5CF2C7D4
+P 10800 2850
+F 0 "#PWR09" H 10800 2600 50  0001 C CNN
+F 1 "GND" H 10805 2677 50  0000 C CNN
+F 2 "" H 10800 2850 50  0001 C CNN
+F 3 "" H 10800 2850 50  0001 C CNN
+	1    10800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 2850 10800 2750
+Wire Wire Line
+	10700 2750 10800 2750
+$Comp
+L Jumper:Jumper_2_Open JP8
+U 1 1 5CF2C7DC
+P 9850 2750
+F 0 "JP8" H 9850 2985 50  0000 C CNN
+F 1 "JP" H 9850 2894 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9850 2750 50  0001 C CNN
+F 3 "~" H 9850 2750 50  0001 C CNN
+	1    9850 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 2900 3    50   Input ~ 0
+P15
+Wire Wire Line
+	9550 2900 9550 2750
+Wire Wire Line
+	9550 2750 9650 2750
+Wire Wire Line
+	10050 2750 10150 2750
+Connection ~ 10150 2750
+Wire Wire Line
+	10150 2750 10150 2850
+$Comp
+L Switch:SW_SPST SW8
+U 1 1 5CF2C7E8
+P 10500 2750
+F 0 "SW8" H 10500 2985 50  0000 C CNN
+F 1 "SW" H 10500 2894 50  0000 C CNN
+F 2 "Button_Switch_THT:ALPS_SKHC" H 10500 2750 50  0001 C CNN
+F 3 "~" H 10500 2750 50  0001 C CNN
+	1    10500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2750 10300 2750
+$EndSCHEMATC
